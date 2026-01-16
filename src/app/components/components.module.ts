@@ -4,23 +4,29 @@ import { UserDetailsComponent } from './user-details/user-details.component';
 import { FilterComponent } from './filter/filter.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from "@angular/common";
+import { UsersListComponent } from './users-list/users-list.component';
 
 @NgModule({
   declarations: [
     UserDetailsComponent,
     FilterComponent,
+    UsersListComponent,
+    UsersListComponent
+
 
   ],
   imports: [
     AngularMaterialModule,
     FormsModule,
-    CommonModule
+    CommonModule,
 
   ],
   exports: [
     UserDetailsComponent,
     FilterComponent,
-    FormsModule
+    FormsModule,
+    UsersListComponent
+
   ],
 })
 export class ComponentsModule { }
