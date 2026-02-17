@@ -6,7 +6,7 @@ import { IAddress } from '../interfaces/user/address.interface';
 })
 export class AddressPipe implements PipeTransform {
 
-  transform(address: IAddress): string {
+  transform(address: IAddress ): string {
 
     const INVALID_ADDRESS =
       !address ||
